@@ -8,7 +8,6 @@ cp ../package.json node_modules/dace-plugin-less
 
 # 检查编译结果
 line=`cat prd/css/index.css|grep '.a .b'|wc -l`
-echo $line
 
 if [ $line -eq 0 ]; then
   exit 1;
