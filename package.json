@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Use less with dace",
   "main": "plugin.js",
+  "files": [
+    "plugin.js"
+  ],
   "scripts": {
     "test": "sh ./test/index.sh",
     "prerelease": "npm test",

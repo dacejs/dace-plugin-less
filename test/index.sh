@@ -1,4 +1,5 @@
 cd test
+npm i
 rm -rf dist prd node_modules/dace-plugin-less
 mkdir -p node_modules/dace-plugin-less
 cp ../plugin.js node_modules/dace-plugin-less
