@@ -1,0 +1,22 @@
+{
+  "name": "dace-plugin-less",
+  "version": "0.0.0",
+  "description": "Use less with dace",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "sh ./test/index.sh",
+    "prerelease": "npm test",
+    "release": "standard-version && npm publish",
+    "postrelease": "git push && git push origin --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dacejs/dace-plugin-less.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0"
+  }
+}
