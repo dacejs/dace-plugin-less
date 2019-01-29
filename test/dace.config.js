@@ -11,8 +11,11 @@ module.exports = {
     if (target === 'web') {
       // css 输出时不带 hash
       const miniCssExtractPlugin = appConfig.plugins.find(p => p.constructor.name === 'MiniCssExtractPlugin');
-      miniCssExtractPlugin.options.filename = 'css/[name].css';
-      miniCssExtractPlugin.options.chunkFilename = 'css/[name].css';
+      if (miniCssExtractPlugin) {
+        console.log(Object.keys(miniCssExtractPlugin));
+        miniCssExtractPlugin.options.filename = 'css/[name].css';
+        miniCssExtractPlugin.options.chunkFilename = 'css/[name].css';
+      }
     }
 
     return appConfig;
