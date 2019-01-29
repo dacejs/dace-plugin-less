@@ -5,7 +5,7 @@
     "start:prod": "NODE_ENV=production node prd/server.js"
   },
   "dependencies": {
-    "dace": "latest",
+    "dace": "next",
     "dace-plugin-less": "..",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
