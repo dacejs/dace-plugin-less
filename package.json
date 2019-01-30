@@ -2,9 +2,9 @@
   "name": "dace-plugin-less",
   "version": "0.1.2",
   "description": "Use less with dace",
-  "main": "dist/plugin.js",
+  "main": "plugin.js",
   "files": [
-    "dist"
+    "plugin.js"
   ],
   "scripts": {
     "test": "sh ./test/index.sh",
